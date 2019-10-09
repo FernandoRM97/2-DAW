@@ -1,0 +1,74 @@
+---
+layout: post
+permalink: /galeria
+title: Galería
+---
+
+<div align="center">
+    <h1>Galería</h1>
+</div>
+
+<div class="fila" align="center">
+    <div class="columna">
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida1.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida1.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida3.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida3.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida2.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida2.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida4.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida4.jpg">
+        </a>
+    </div>
+    <div class="columna">
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida7.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida7.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida5.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida5.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida8.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida8.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida6.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida6.jpg">
+        </a>
+    </div>
+    <div class="columna">
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida9.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida9.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida10.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida10.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida11.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida11.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida12.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida12.jpg">
+        </a>
+    </div>
+    <div class="columna">
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida13.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida13.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida14.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida14.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida15.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida15.jpg">
+        </a>
+        <a href="{{ site.baseurl }}/assets/images/galeria/comida16.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="{{ site.baseurl }}/assets/images/galeria/comida16.jpg">
+        </a>
+    </div>
+</div>
+
+<div align="center" style="color: red">
+    <p>Photos by Brooke Lark, Joseph Gonzalez, Eiliv-Sonas Aceron, Lidye, Monika Grabkowska, Alex Munsell, Davide Cantelli, Christine Siracusa, Eaters Collective on Unsplash</p>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/lightbox-plus-jquery.js"></script>

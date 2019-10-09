@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<context:component-scan base-package="es.spring"></context:component-scan>
+
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+		<property name="url" value="jdbc:oracle:thin:@192.168.56.101:1521:xe"></property>
+		<property name="username" value="spring"></property>
+		<property name="password" value="spring"></property>		
+	</bean>
+	
+	<bean id="marca2" class="es.spring.beans.Marca">
+		<property name="id" value="2"></property>
+		<property name="nombre" value="Marca2"></property>
+	</bean>
+	
+	<bean id="equipo1" class="es.spring.beans.Equipo">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Sevilla FC"></property>
+	</bean>
+	
+	<bean id="camiseta1" class="es.spring.beans.Camiseta">
+		<property name="id" value="1"></property>
+		<property name="numero" value="10"></property>
+		<property name="marca" ref="marca2"></property>
+	</bean>
+	
+	<bean id="jugador1" class="es.spring.beans.Jugador">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Fernando"></property>
+		<property name="equipo" ref="equipo1"></property>
+		<property name="camiseta" ref="camiseta1"></property>
+	</bean>
+	
+</beans>

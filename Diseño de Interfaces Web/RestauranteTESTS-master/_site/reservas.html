@@ -1,0 +1,96 @@
+<head>
+    <title>Reservas</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="/" class="nav-enlace desaparece ">Inicio</a></li>
+            <a href="/menu" class="nav-enlace desaparece ">Menú</a></li>
+            <a href="/quienes-somos" class="nav-enlace desaparece ">Quiénes Somos</a></li>
+            <a href="/donde-estamos" class="nav-enlace desaparece ">Dónde Estamos</a></li>
+            <a href="/galeria" class="nav-enlace desaparece ">Galería</a></li>
+            <a href="/reservas" class="nav-enlace desaparece current"  id="reservas">Reservas</a></li>
+                
+            </nav>
+    </div>
+</div>
+
+<div class="container publicidad">
+    <main>
+        <div id="formreserva">
+    <fieldset class="fieldsetReserva">
+        <br />
+        <b>Nombre:</b>
+        <input type="text" class="iReservas" />
+        <b>Email:</b> <input type="text" class="iReservas" />
+        <b>Nº Comensales:</b> 
+            <select name="select" id="selectFormulario">
+                <option value="value1">1</option> 
+                <option value="value2">2</option>
+                <option value="value3">3</option>
+                <option value="value4">4</option> 
+                <option value="value5">5</option>
+                <option value="value6">6</option>
+                <option value="value7">7</option> 
+                <option value="value8">8</option>
+                <option value="value9">9</option>
+                <option value="value10">10</option>
+            </select>
+        <b>Zona:</b>   <input type="radio" name="zona" value="barra" class="radioReservas" checked="" />Barra
+                <input type="radio" name="zona" value="salón" class="radioReservas" />Salón
+                <input type="radio" name="zona" value="terraza" class="radioReservas" />Terraza
+        <p><b>Sugerencias:</b> 
+        <br />
+        <textarea id="sugerencias" rows="4" cols="50"></textarea></p>
+        <p class="protecciondatos">Sobre la protección de datos: * </p>
+        <p><input type="checkbox" name="acepto1" class="terminos" />He leido y acepto la Política de Privacidad.</p>
+        <input type="checkbox" name="acepto2" class="terminos" />Deseo recibir ofertas especiales y notificaciones por e-mail y mensajes de texto.
+        <br />    
+    </fieldset>
+<div>
+<div align="center" style="padding-top: 5px">
+<input type="button" id="btnreservar" value="RESERVAR" />
+</div>
+</div></div>
+
+    </main>
+    <aside>
+        <div id="divanuncio">
+            <img src="/assets/images/anuncio.jpg" class="anuncio"></img>
+        </div>
+    </aside>
+</div>
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

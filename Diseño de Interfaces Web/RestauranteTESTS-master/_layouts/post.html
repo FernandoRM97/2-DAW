@@ -1,0 +1,59 @@
+---
+--- 
+<head>
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+    <link href="{{ site.baseurl }}/assets/css/lightbox.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{site.baseurl}}/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="{{site.baseurl}}/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="{{ site.baseurl }}/" class="nav-enlace desaparece {% if page.url == '/' %} current {% endif %}">Inicio</a>
+            <a href="{{ site.baseurl }}/menu" class="nav-enlace desaparece {% if page.url == '/menu' %}current{% endif %}">Menú</a>
+            <a href="{{ site.baseurl }}/quienes-somos" class="nav-enlace desaparece {% if page.url == '/quienes-somos' %}current{% endif %}">Quiénes Somos</a>
+            <a href="{{ site.baseurl }}/donde-estamos" class="nav-enlace desaparece {% if page.url == '/donde-estamos' %}current{% endif %}">Dónde Estámos</a>
+            <a href="{{ site.baseurl }}/galeria" class="nav-enlace desaparece {% if page.url == '/galeria' %}current{% endif %}">Galería</a>
+            <a id="reservas"class="nav-enlace desaparece {% if page.url == '/reservas' %}current{% endif %}" href="{{ site.baseurl }}/reservas">Reservas</a>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        {{ content }}
+    </main>
+</div>
+
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

@@ -1,0 +1,91 @@
+<head>
+    <title>Dónde Estámos</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="/assets/css/lightbox.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="/" class="nav-enlace desaparece ">Inicio</a></li>
+            <a href="/menu" class="nav-enlace desaparece ">Menú</a></li>
+            <a href="/quienes-somos" class="nav-enlace desaparece ">Quiénes Somos</a></li>
+            <a href="/donde-estamos" class="nav-enlace desaparece current">Dónde Estamos</a></li>
+            <a href="/galeria" class="nav-enlace desaparece ">Galería</a></li>
+            <a id="reservas"class="nav-enlace desaparece " href="/reservas">Reservas</a></li>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        <div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="information">
+        <h4>Ponte en contacto con nosotros</h4>
+          <i class="fa fa-phone" style="font-size:30px;color:rgb(150, 150, 150);"></i>
+          <label><strong>Teléfono</strong></label>
+            <p>667 091 224</p>
+          <i class="fa fa-at" style="font-size:30px;color:rgb(150, 150, 150);"></i>
+          <label><strong>Email </strong></label>
+            <p>strangerfoodcontact@gmail.com</p>
+            <i class="fa fa-map-marker" style="font-size:30px;color:rgb(150, 150, 150);"></i> 
+          <label><strong>Dirección</strong></label>
+            <p>Calle Diamantino García, 40. Brenes (Sevilla)</p>
+      </div>
+    </div>
+    <div class="column">
+      <form action="#">
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="" />
+        <label for="lname">Apellidos</label>
+        <input type="text" id="lname" name="lastname" placeholder="" />
+        <label for="subject">Asunto</label>
+        <textarea id="subject" name="subject" placeholder="" style="height:170px"></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </div>
+  <div style="width: 100%">
+    <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=es&amp;coord=37.544903, -5.872396&amp;q=Calle%20Diamantino%20Garc%C3%ADa%2C%2040%2C%2041310%20Brenes%20(Sevilla)+(Stranger%20Food)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    <a href="https://www.mapsdirections.info/calcular-ruta.html">mapas y direcciones</a>
+    </iframe>
+  </div><br />
+</div>
+
+    </main>
+</div>
+
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

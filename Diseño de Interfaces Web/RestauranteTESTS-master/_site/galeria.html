@@ -1,0 +1,126 @@
+<head>
+    <title>Galería</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="/assets/css/lightbox.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="/" class="nav-enlace desaparece ">Inicio</a></li>
+            <a href="/menu" class="nav-enlace desaparece ">Menú</a></li>
+            <a href="/quienes-somos" class="nav-enlace desaparece ">Quiénes Somos</a></li>
+            <a href="/donde-estamos" class="nav-enlace desaparece ">Dónde Estamos</a></li>
+            <a href="/galeria" class="nav-enlace desaparece current">Galería</a></li>
+            <a id="reservas"class="nav-enlace desaparece " href="/reservas">Reservas</a></li>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        <div align="center">
+    <h1>Galería</h1>
+</div>
+
+<div class="fila" align="center">
+    <div class="columna">
+        <a href="/assets/images/galeria/comida1.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida1.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida3.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida3.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida2.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida2.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida4.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida4.jpg" />
+        </a>
+    </div>
+    <div class="columna">
+        <a href="/assets/images/galeria/comida7.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida7.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida5.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida5.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida8.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida8.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida6.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida6.jpg" />
+        </a>
+    </div>
+    <div class="columna">
+        <a href="/assets/images/galeria/comida9.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida9.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida10.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida10.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida11.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida11.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida12.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida12.jpg" />
+        </a>
+    </div>
+    <div class="columna">
+        <a href="/assets/images/galeria/comida13.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida13.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida14.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida14.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida15.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida15.jpg" />
+        </a>
+        <a href="/assets/images/galeria/comida16.jpg" data-lightbox="roadtrip">
+            <img class="galeriaimg" src="/assets/images/galeria/comida16.jpg" />
+        </a>
+    </div>
+</div>
+
+<div align="center" style="color: red">
+    <p>Photos by Brooke Lark, Joseph Gonzalez, Eiliv-Sonas Aceron, Lidye, Monika Grabkowska, Alex Munsell, Davide Cantelli, Christine Siracusa, Eaters Collective on Unsplash</p>
+</div>
+
+<script src="/assets/js/lightbox-plus-jquery.js"></script>
+
+
+    </main>
+</div>
+
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

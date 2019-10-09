@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	
+	<!-- <context:annotation-config /> -->
+	
+	<!-- <context:component-scan base-package="es.spring"></context:component-scan> -->
+
+	<!--
+	<bean id="messi" class="es.spring.beans.Jugador">
+		<property name="numero" value="10"></property>
+		<property name="nombre" value="Messi"></property>
+		<property name="equipo" ref="barcelona"></property>
+	</bean>
+	
+	<bean id="barcelona" class="es.spring.beans.Barcelona">
+		<qualifier value="barcelonaQualifier"></qualifier>
+	</bean>
+	
+	<bean id="juventus" class="es.spring.beans.Juventus"></bean>
+	
+	-->
+	<!-- 
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+	
+	<bean class="es.spring.beans.FernandoBeansPostProcessor"></bean>
+	
+	<bean id="persona" class="es.spring.beans.Persona" autowire="byName">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Fernando"></property>
+		<property name="apodo" value="FerENP"></property>
+	</bean>
+	<bean id="pais" class="es.spring.beans.Pais">
+		<property name="nombre" value="España"></property>
+		<property name="ciudades">
+			<list>
+				<ref bean="ciudad1" />
+				<ref bean="ciudad2" />
+				<ref bean="ciudad3" />
+			</list>
+		</property>
+	</bean>
+	<bean id="ciudades" class="es.spring.beans.Ciudades">
+		<property name="nombre" value="Sevilla"></property>
+	</bean>
+	<bean id="ciudad2" class="es.spring.beans.Ciudades">
+		<property name="nombre" value="Cádiz"></property>
+	</bean>
+	<bean id="ciudad3" class="es.spring.beans.Ciudades">
+		<property name="nombre" value="Granada"></property>
+	</bean>
+	-->
+	
+	<bean id="jugador1" class="es.spring.beans.JugadorEjercicio1">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Fernando"></property>
+		<property name="equipo" ref="barcelona"></property>
+		<property name="camiseta" ref="camiseta1"></property>
+	</bean>
+	
+	<bean id="barcelona" class="es.spring.beans.Barcelona"></bean>
+	
+	<bean id="juventus" class="es.spring.beans.Juventus"></bean>
+	
+	<bean id="camiseta1" class="es.spring.beans.CamisetaEjercicio1">
+		<property name="id" value="1"></property>
+		<property name="numero" value="10"></property>
+		<property name="marca" ref="marca1"></property>
+	</bean>
+	
+	<bean id="marca1" class="es.spring.beans.MarcaEjercicio1">
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Marca 1 OK"></property>
+	</bean>
+</beans>

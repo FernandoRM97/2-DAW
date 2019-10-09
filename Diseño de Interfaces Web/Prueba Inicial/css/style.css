@@ -1,0 +1,9 @@
+    footer {
+        background: url('../img/tarjeta_socio.jpg') bottom no-repeat;
+        background-color: black;
+  		position: absolute;
+  		bottom: 0;
+  		width: 100%;
+  		height: 50px;
+  		color: white;
+    }

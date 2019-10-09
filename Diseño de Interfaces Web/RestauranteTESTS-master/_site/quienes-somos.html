@@ -1,0 +1,132 @@
+<head>
+    <title>Quiénes Somos</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="/assets/css/lightbox.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="/" class="nav-enlace desaparece ">Inicio</a></li>
+            <a href="/menu" class="nav-enlace desaparece ">Menú</a></li>
+            <a href="/quienes-somos" class="nav-enlace desaparece current">Quiénes Somos</a></li>
+            <a href="/donde-estamos" class="nav-enlace desaparece ">Dónde Estamos</a></li>
+            <a href="/galeria" class="nav-enlace desaparece ">Galería</a></li>
+            <a id="reservas"class="nav-enlace desaparece " href="/reservas">Reservas</a></li>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        <div>
+  <h1 class="titulo">Nuestro equipo</h1>
+</div>
+<!-- First Row workTeam -->
+<div class="cards">
+<div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="/assets/images/chef1.jpg" alt="chef1" style="width:100%" />
+        <div class="containerImages">
+            <h2>Manuel Val</h2>
+            <p class="title">CEO &amp; Fundador</p>
+            <p>Aprendiz, bussiness thinker y campestre. Una maravilla de persona y flamenco</p>
+        </div>
+        </div>
+    </div> <!-- cerramos columna-->
+    <div class="column">
+      <div class="card">
+        <img src="/assets/images/chef2.jpg" alt="chef2" style="width:100%" />
+        <div class="containerImages">
+          <h2>Jaime Moreno</h2>
+          <p class="title">Director Creativo</p>
+          <p>Previsor, comprometido y salsero. Buena gente y sevillano de pura cepa</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/assets/images/chef3.jpg" alt="chef3" style="width:100%" />
+        <div class="containerImages">
+          <h2>Sonia Pintor</h2>
+          <p class="title">Chef ejecutivo</p>
+          <p>Inquieta, feliz y viajera. Aprendiz de todo y perfeccionista hasta decir basta</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/assets/images/chef4.jpg" alt="chef1" style="width:100%" />
+        <div class="containerImages">
+          <h2>Carla Trombino</h2>
+          <p class="title">Sous Chef</p>
+          <p>Dedicada por completo a su pasión. Su canción preferida: 'O Sole Mio</p>
+        </div>
+      </div>
+    </div>
+</div> <!--cerramos row-->
+
+<!-- Second Row workTeam -->
+
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <img src="/assets/images/chef5.jpg" alt="chef2" style="width:100%" />
+      <div class="containerImages">
+        <h2>Eugenio Delafuente</h2>
+        <p class="title">Chef Repostero</p>
+        <p>Trabajador y feliz. Aventurero y fiestero, con su toque dulzón</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/images/chef6.jpg" alt="chef3" style="width:100%" />
+      <div class="containerImages">
+        <h2>Jean Garne</h2>
+        <p class="title">Sommelier</p>
+        <p>Te educará y sugerirá lo mejor. Nuestro francés más sevillano</p>
+      </div>
+    </div>
+  </div>
+  
+</div> <!-- cerramos row-->
+</div>
+
+    </main>
+</div>
+
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

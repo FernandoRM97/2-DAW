@@ -1,0 +1,113 @@
+<head>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="/assets/css/lightbox.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="https://fitfoodfresh.com/public/uploads/2018/01/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div id="header">
+    <div id="logo">
+            <a href="/">
+                <img src="/assets/images/logo.png" >
+            </a>
+    </div>
+    <div id="menu">
+        <nav class="menu">
+            <a class="nav-boton" onclick="accion()"><img src="/assets/images/menu.png" width="50px" height="auto"></a>
+            
+            <a href="/" class="nav-enlace desaparece  current ">Inicio</a></li>
+            <a href="/menu" class="nav-enlace desaparece ">Menú</a></li>
+            <a href="/quienes-somos" class="nav-enlace desaparece ">Quiénes Somos</a></li>
+            <a href="/donde-estamos" class="nav-enlace desaparece ">Dónde Estamos</a></li>
+            <a href="/galeria" class="nav-enlace desaparece ">Galería</a></li>
+            <a id="reservas"class="nav-enlace desaparece " href="/reservas">Reservas</a></li>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+    <main>
+        <div align="center">
+
+<h1 style="font-size: 40px">Stranger Food</h1>
+
+<div id="imagensincarousel">
+  <img src="/assets/images/res.jpg" />
+    <hr />
+    <p>Vive la experiencia y disfruta de la esencia de lo bueno.</p>
+    <p>Una cocina basada en la tradición, tratada con creatividad, encontrando así nuestra propia identidad</p>
+</div>
+
+<div class="videodesap">
+  <video autoplay="" muted="" loop="" id="myVideo">
+    <source src="/assets/videos/1.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <div class="contentvideo">
+    <h1>BIENVENIDOS</h1>
+    <p>Vive la experiencia y disfruta de la esencia de lo bueno</p>
+  </div>
+</div>
+
+<div id="infoindex">
+  <div class="grid-container">
+    <div class="grid-item"><b>MENÚ</b></div>
+    <div class="grid-item"><b>QUIÉNES SOMOS</b></div>
+    <div class="grid-item"><b>GALERÍA</b></div>  
+    <div class="grid-item">Échale un buen vistazo a nuesto menú</div>
+    <div class="grid-item">Somos mejores cocinando que programando</div>
+    <div class="grid-item">Nuestras mejores delicateces</div>  
+    <div class="grid-item"><a href="/menu"><button>Menú</button></a></div>
+    <div class="grid-item"><a href="/quienes-somos"><button>Quiénes Somos</button></a></div>
+    <div class="grid-item"><a href="/galeria"><button>Galería</button></a></div>  
+  </div>
+</div>
+
+<div class="videooculto">
+  <video autoplay="" muted="" loop="" id="myVideo">
+    <source src="/assets/videos/3.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+</div>
+
+<div class="videodesap">
+  <video autoplay="" muted="" loop="" id="myVideo">
+    <source src="/assets/videos/2.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+
+  <div class="contentvideo">
+    <h1>Nos gusta comer</h1>
+    <p>Una cocina basada en la tradición, tratada con creatividad, encontrando así nuestra propia identidad</p>
+  </div>
+</div>
+</div>
+
+    </main>
+</div>
+
+
+<div class="footer">
+    <div id="icons">
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-telegram"></a>
+    </div>
+    <div id="direccion">
+        <p>&copy; Stranger Foods 2019 • C/ Diamantino García, 40 s/n, Sevilla • Tel: 985 475 625 • Reservas Grupos/Eventos: 667 091 224</p>
+    </div>
+</div>
+
+<script>
+    function accion(){
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+</script>

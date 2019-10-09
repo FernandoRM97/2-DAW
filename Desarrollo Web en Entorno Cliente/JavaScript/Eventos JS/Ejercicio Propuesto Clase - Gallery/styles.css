@@ -1,0 +1,29 @@
+.gallery-item{
+
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.gallery{
+
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.red{
+
+	border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: red;
+}

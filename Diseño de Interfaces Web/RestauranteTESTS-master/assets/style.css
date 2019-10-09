@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-color: rgb(200, 200, 200);
+}
+
+
+/* CABECERA */
+
+#header {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+    transform: translate(80%, 40%);
+}
+
+#menu {
+    float: right;
+    margin: 1%;
+    padding-right: 4%;
+    overflow: hidden;
+}
+
+#menu .nav-enlace {
+    padding-top: 2%;
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+#reservas {
+    border: 1px solid yellow;
+    padding: 10px;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.current:hover,
+.current {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+
+/* MENU */
+
+.av-enlacne {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-boton {
+    padding-top: 17px;
+    padding-right: 10px;
+    display: none;
+}
+
+
+/* CUERPO */
+
+.container {
+    overflow: hidden;
+    clear: both;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 81.6%;
+    height: auto;
+    background-color: rgb(200, 200, 200);
+}
+
+main {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.publicidad main {
+    float: left;
+    width: 70%;
+    height: auto;
+}
+
+aside {
+    padding-top: 1%;
+    float: right;
+    width: 30%;
+    max-height: 82%;
+    display: block;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+.footer {
+    clear: both;
+    width: 100%;
+    max-height: 80px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* ICONOS DEL FOOTER */
+
+#icons,
+#direccion {
+    text-align: center;
+}
+
+.fa {
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 6px;
+}
+
+.fa-facebook {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: -5px;
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: -5px;
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-twitter {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: -5px;
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-telegram {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: -5px;
+    background: #125688;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    color: black;
+}
+
+
+/* GALERÍA */
+
+.fila {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 5%;
+    padding-bottom: 1%;
+}
+
+.columna {
+    -ms-flex: 23%;
+    /* IE10 */
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 4px;
+}
+
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#imagensincarousel {
+    display: none;
+}
+
+
+/* VIDEO INDEX */
+
+#myVideo {
+    position: relative;
+    width: 80%;
+    min-width: 80%;
+    height: auto;
+    min-height: 350px;
+    max-height: 900px;
+}
+
+.contentvideo {
+    margin-top: -120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    background: rgba(0, 0, 0, 0.800);
+    color: #f1f1f1;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#infoindex {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -10%;
+    padding: 5px;
+    width: 120%;
+    background-color: black;
+    height: auto;
+}
+
+#infoindex table {
+    width: 60%;
+    color: white;
+    text-align: center;
+}
+
+#infoindex table td {
+    width: 33%;
+}
+
+#infoindex table td button {
+    margin: 5px;
+    border: 1px solid yellow;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.videooculto {
+    display: none;
+}
+
+
+/* MENU RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    nav {
+        background: black;
+        flex-direction: column;
+    }
+    .nav-boton {
+        float: right;
+        display: block;
+    }
+    .menu {
+        text-align: right;
+        width: 400px;
+        padding-bottom: 2%;
+    }
+    .desaparece {
+        display: none;
+    }
+    #reservas {
+        border: 0;
+    }
+    .carousel-wrapper {
+        height: 150px;
+        position: relative;
+        width: 200px;
+    }
+    .carousel-item {
+        position: absolute;
+        width: 80%;
+        padding: 50px 25px;
+    }
+    .carousel-item h2 {
+        font-size: 14px;
+        margin-top: 15%;
+        background: rgba(255, 255, 255, 0.76);
+    }
+    .carousel-item p {
+        font-size: 10px;
+        margin-top: -10px;
+        background: rgba(255, 255, 255, 0.76);
+    }
+    .footer {
+        padding-bottom: 30px;
+    }
+    .contentvideo {
+        margin-top: -80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: sticky;
+        background: rgba(0, 0, 0, 0.800);
+        color: #f1f1f1;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    nav {
+        background: black;
+        flex-direction: column;
+    }
+    .menu {
+        text-align: right;
+        width: 200px;
+        padding-bottom: 2%;
+    }
+    .desaparece {
+        margin-top: 100px;
+        display: none;
+    }
+    #reservas {
+        border: 0;
+    }
+    .videodesap {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .columna {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .columna {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* imagen en imágen */
+
+@media screen and (max-width: 650px) {
+    #imagensincarousel {
+        display: block;
+    }
+    #imagensincarousel img {
+        display: block;
+        width: 310px;
+        height: 500px;
+    }
+    .videodesap {
+        display: none;
+    }
+    .videooculto {
+        display: block;
+    }
+    .videooculto #myVideo {
+        margin-top: -30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .columna {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* QUIENES SOMOS */
+
+.row {
+    justify-content: center;
+}
+
+
+/* tarjetas equipo justificación*/
+
+.card {
+    justify-content: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+
+
+/* Muy importante, si no hacemos clear puede haber problemas en el diseño*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-container {
+    margin-right: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item b {
+    color: yellow;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+    .grid-container {
+        margin-right: -10px;
+        margin-left: -10px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .grid-item {
+        color: white;
+        padding: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .grid-item b {
+        font-size: 16px;
+    }
+}
+
+.card {
+    box-shadow: 0 8px 8px 0 rgba(92, 92, 92, 0.2);
+}
+
+.containerImages {
+    padding: 16px;
+}
+
+.containerImages {
+    background-color: rgba(255, 255, 255, 0.514);
+    text-align: center;
+    padding: 20px;
+}
+
+h1.titulo {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+
+
+/* location and contact information */
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    justify-content: center;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: yellow;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: style=#d3d0cb;
+}
+
+
+/* Style the container/contact section */
+
+
+/* Create two columns that float next to eachother */
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.information {
+    text-align: center;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.grid-item button {
+    padding: 10px;
+    background-color: yellow;
+    font-size: 18px;
+    border: none;
+}
+
+
+/* MENU */
+
+.comida {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.comida img {
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
+
+.comida div {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    color: white;
+}
+
+#menucomida h1 {
+    background-color: rgba(255, 255, 255, 0.479);
+    color: black;
+}
+
+#menucomida p {
+    color: black;
+}
+
+#menucomida b {
+    color: black;
+}
+
+#menucomida .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+#menucomida .grid-item {
+    padding: 20px;
+}
+
+
+/* RESERVA */
+
+#formreserva {
+    padding-top: 50px;
+    width: 100%;
+    display: block;
+    padding-right: 50px;
+}
+
+#sugerencias {
+    width: 80%;
+}
+
+
+/* ANUNCIO */
+
+.anuncio {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    width: auto;
+    max-height: 80%;
+    height: auto;
+}
+
+#btnreservar {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: yellow;
+    font-size: 18px;
+    border: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .publicidad main {
+        width: 100%;
+        clear: both;
+    }
+    #formreserva {
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+    }
+    aside {
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    #divanuncio {
+        width: 100%;
+        clear: both;
+    }
+    #divanuncio img {
+        position: sticky;
+        top: 100%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0%)
+    }
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 650px) {
+    #imagensincarousel img {
+        display: block;
+        width: 310px;
+        height: 500px;
+    }
+}
