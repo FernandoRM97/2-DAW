@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jugadores</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://images.vexels.com/media/users/3/131556/isolated/preview/904af0f5df4690d4236d521bb141b97f-logo-de-nba-by-vexels.png" alt="Logo" style="width:40px;">
+            </a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="jugadores.html">Jugadores<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="partidos.html">Partidos<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="app2">
+        <h1 class="text-center">Jugadores NBA</h1>
+
+        <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Name...'>
+        <div class="row">
+
+            <div class="row" id="list-teams" v-if="playersFilter && playersFilter.length">
+                <div class="col-6 col-md-4 col-lg-3" v-for="players in playersFilter">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <label>First Name: </label> {{ players.first_name }} </br>
+                                <label>Last Name: </label> {{players.last_name}} </br>
+                                <label>Position: </label> {{ players.position}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app2.js"></script>
+</body>
+
+</html>
